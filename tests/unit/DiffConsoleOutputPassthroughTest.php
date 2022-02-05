@@ -3,7 +3,6 @@
 namespace Graze\DiffRenderer\Test\Unit;
 
 use Graze\DiffRenderer\DiffConsoleOutput;
-use Graze\DiffRenderer\Terminal\TerminalInterface;
 use Graze\DiffRenderer\Test\TestCase;
 use Mockery;
 use Symfony\Component\Console\Formatter\OutputFormatterInterface;
@@ -18,7 +17,7 @@ class DiffConsoleOutputPassThroughTest extends TestCase
     /** @var mixed */
     private $terminal;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
